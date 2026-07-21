@@ -20,20 +20,15 @@ import BackToTop from "./components/BackToTop";
 export default function Home() {
   return (
     <>
-      {/* Intro */}
       <LogoIntro />
 
-      {/* Effects */}
       <MouseGlow />
       <ScrollProgress />
 
-      {/* Navigation */}
       <Navbar />
 
-      {/* Hero */}
       <HeroSlider />
 
-      {/* Website */}
       <main className="bg-black">
 
         <FadeIn>
@@ -70,12 +65,10 @@ export default function Home() {
 
       </main>
 
-      {/* Floating Buttons */}
       <WhatsAppButton />
       <Instagram />
       <BackToTop />
 
-      {/* Background Music */}
       <MusicPlayer />
     </>
   );
