@@ -1,11 +1,9 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://weddingalbumindia.com";
-
   return [
     {
-      url: baseUrl,
+      url: "https://weddingalbumindia.com",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
