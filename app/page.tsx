@@ -1,10 +1,10 @@
+import VideoSection from "./components/VideoSection";
 import Instagram from "./components/Instagram";
 import ScrollProgress from "./components/ScrollProgress";
 import MouseGlow from "./components/MouseGlow";
 import LogoIntro from "./components/LogoIntro";
 import Navbar from "./components/Navbar";
 import HeroSlider from "./components/HeroSlider";
-import VideoSection from "./components/VideoSection";
 import WhyChooseUs from "./components/WhyChooseUs";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Gallery from "./components/Gallery";
@@ -20,15 +20,20 @@ import BackToTop from "./components/BackToTop";
 export default function Home() {
   return (
     <>
+      {/* Intro */}
       <LogoIntro />
 
+      {/* Effects */}
       <MouseGlow />
       <ScrollProgress />
 
+      {/* Navigation */}
       <Navbar />
 
+      {/* Hero Section */}
       <HeroSlider />
 
+      {/* Main Website */}
       <main className="bg-black">
 
         <FadeIn>
@@ -65,10 +70,12 @@ export default function Home() {
 
       </main>
 
+      {/* Floating Buttons */}
       <WhatsAppButton />
       <Instagram />
       <BackToTop />
 
+      {/* Music */}
       <MusicPlayer />
     </>
   );
