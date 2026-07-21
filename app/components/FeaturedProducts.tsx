@@ -1,97 +1,100 @@
 "use client";
 
+import Link from "next/link";
+
 const products = [
   {
     title: "Mini Book",
     size: "6×8",
-    image: "/images/products/mini-book/cover.jpg",
+    image: "/images/mini-album.jpg/cover1.jpg",
+    slug: "mini-book",
   },
   {
     title: "Semi Mini Book",
     size: "8×10",
-    image: "/images/products/semi-mini-book/cover.jpg",
+    image: "/images/semini-album.jpg/cover1.jpg",
+    slug: "semi-mini-book",
   },
   {
     title: "Matt Cover Album",
     size: "12×36 • 18×24",
-    image: "/images/products/matt-cover/cover.jpg",
+    image: "/images/matt-cover.jpg/cover1.jpg",
+    slug: "matt-cover",
   },
   {
     title: "3D Cover Album",
     size: "12×36 • 18×24",
-    image: "/images/products/3d-cover/cover.jpg",
+    image: "/images/3d-cover.jpg/cover1.jpg",
+    slug: "3d-cover",
   },
   {
     title: "Sparkle Cover Album",
     size: "12×36 • 18×24",
-    image: "/images/products/sparkle-cover/cover.jpg",
+    image: "/images/sparkel-cover.jpg/cover1.jpg",
+    slug: "sparkle-cover",
   },
   {
     title: "Acrylic Cover Album",
     size: "12×36 • 18×24",
-    image: "/images/products/acrylic-cover/cover.jpg",
+    image: "/images/Acrylic-cover.jpg/cover1.jpg",
+    slug: "acrylic-cover",
+  },
+  {
+    title: "Wooden Cover Album",
+    size: "12×36 • 18×24",
+    image: "/images/wooden-cover.jpg/cover1.jpg",
+    slug: "wooden-cover",
   },
 ];
 
 export default function FeaturedProducts() {
   return (
-    <section
-      id="featured"
-      className="bg-[#070707] py-24 px-6"
-    >
+    <section className="bg-[#070707] py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <p className="text-center uppercase tracking-[8px] text-yellow-400 mb-4">
-          Featured Products
+        <p className="text-center uppercase tracking-[8px] text-yellow-400">
+          Featured Collection
         </p>
 
-        <h2 className="text-center text-5xl md:text-6xl font-bold text-white">
-          Premium Wedding Album Collection
+        <h2 className="text-center text-5xl font-bold text-white mt-4">
+          Premium Wedding Albums
         </h2>
-
-        <p className="text-center text-gray-400 mt-6 max-w-3xl mx-auto">
-          Crafted with premium materials, luxury printing and elegant finishing
-          to preserve your unforgettable memories forever.
-        </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
 
-          {products.map((product, index) => (
+          {products.map((product) => (
 
             <div
-              key={index}
-              className="group bg-[#111] rounded-3xl overflow-hidden border border-yellow-500/20 hover:border-yellow-400 transition-all duration-500 hover:-translate-y-2 shadow-xl"
+              key={product.slug}
+              className="bg-[#111] rounded-3xl overflow-hidden border border-yellow-500/20 hover:border-yellow-400 transition duration-500"
             >
 
-              <div className="overflow-hidden">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="w-full h-80 object-cover hover:scale-105 transition duration-500"
+              />
 
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
-                />
+              <div className="p-6">
 
-              </div>
-
-              <div className="p-7">
-
-                <h3 className="text-3xl font-bold text-white">
+                <h3 className="text-2xl font-bold text-white">
                   {product.title}
                 </h3>
 
-                <p className="text-yellow-400 mt-3 font-semibold">
+                <p className="text-yellow-400 mt-3">
                   Available Size
                 </p>
 
-                <p className="text-gray-300 mt-2">
+                <p className="text-gray-300">
                   {product.size}
                 </p>
 
-                <button
-                  className="mt-8 w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 rounded-full transition"
+                <Link
+                  href={`/albums/${product.slug}`}
+                  className="block mt-8 text-center bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 rounded-full"
                 >
-                  View Collection
-                </button>
+                  View Details
+                </Link>
 
               </div>
 
