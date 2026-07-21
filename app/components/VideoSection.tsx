@@ -46,15 +46,23 @@ export default function VideoSection() {
 
           {/* Video 2 */}
           <div className="bg-[#111] rounded-2xl overflow-hidden border border-yellow-500/20 shadow-xl hover:border-yellow-400 transition-all duration-300">
-            <video
-              controls
-              preload="metadata"
-              playsInline
-              className="w-full h-[320px] object-cover"
-            >
-              <source src="/video/video2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+           <video
+  controls
+  preload="metadata"
+  className="w-full h-[320px] object-cover"
+>
+  <source src="/video/video1.mp4.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<video
+  controls
+  preload="metadata"
+  className="w-full h-[320px] object-cover"
+>
+  <source  src="/video/video2.mp4" type="video/mp4" /> /
+  Your browser does not support the video tag.
+</video>
 
             <div className="p-6">
               <h3 className="text-2xl font-bold text-yellow-400 mb-3">
