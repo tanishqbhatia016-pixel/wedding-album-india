@@ -1,7 +1,7 @@
+import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,14 +30,29 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RLVKPSSBF1"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RLVKPSSBF1');
+          `}
+        </Script>
+      </head>
+
       <body className="min-h-full flex flex-col">
         {children}
 
         <SpeedInsights />
         <Analytics />
-
-        {/* Google Analytics */}
-        <GoogleAnalytics gaId="G-RLVKPSSBF1" />
       </body>
     </html>
   );
