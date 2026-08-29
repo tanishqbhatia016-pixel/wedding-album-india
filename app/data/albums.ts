@@ -16,15 +16,13 @@ export const albums: Album[] = [
     slug: "mini-book",
     title: "Mini Book",
     category: "Premium Photo Album",
-    cover: "/images/products/mini-book/cover.jpg",
+    cover: "/images/mini-album.jpg/cover1.jpg",
     images: [
-      "/images/products/mini-book/img1.jpg",
-      "/images/products/mini-book/img2.jpg",
-      "/images/products/mini-book/img3.jpg",
-      "/images/products/mini-book/img4.jpg",
+      "/images/mini-album.jpg/cover1.jpg",
+      "/images/mini-album.jpg/cover2.jpg",
     ],
     description:
-      "Premium Mini Book specially designed for birthdays, baby shoots, family memories and gifting. Sizes available 6X8",
+      "Premium Mini Book specially designed for birthdays, baby shoots, family memories and gifting. Sizes available 6×8.",
     features: [
       "Photo Quality 200 GSM Paper",
       "24 to 120 Pages",
@@ -41,15 +39,12 @@ export const albums: Album[] = [
     slug: "semi-mini-book",
     title: "Semi Mini Book",
     category: "Luxury Mini Album",
-    cover: "/images/products/semi-mini-book/cover.jpg",
+    cover: "/images/semini-album.jpg/cover1.jpg",
     images: [
-      "/images/products/semi-mini-book/img1.jpg",
-      "/images/products/semi-mini-book/img2.jpg",
-      "/images/products/semi-mini-book/img3.jpg",
-      "/images/products/semi-mini-book/img4.jpg",
+      "/images/semini-album.jpg/cover1.jpg",
     ],
     description:
-      "Printed on premium 300 GSM Art Paper with rich gloss finish for vibrant colours and premium feel. Sizes available 8X10",
+      "Printed on premium 300 GSM Art Paper with rich gloss finish for vibrant colours and a premium feel. Sizes available 8×10.",
     features: [
       "300 GSM Art Paper",
       "Rich Gloss Finish",
@@ -66,15 +61,12 @@ export const albums: Album[] = [
     slug: "matt-cover",
     title: "Matt Cover Album",
     category: "Wedding Album",
-    cover: "/images/products/matt-cover/cover.jpg",
+    cover: "/images/matt-cover.jpg/cover1.jpg",
     images: [
-      "/images/products/matt-cover/img1.jpg",
-      "/images/products/matt-cover/img2.jpg",
-      "/images/products/matt-cover/img3.jpg",
-      "/images/products/matt-cover/img4.jpg",
+      "/images/matt-cover.jpg/cover1.jpg",
     ],
     description:
-      "Elegant matt finish wedding album with premium look and smooth texture.Sizes available 12X36 18X24",
+      "Elegant matt finish wedding album with premium look and smooth texture. Sizes available 12×36 and 18×24.",
     features: [
       "Matt Finish Cover",
       "Premium Lamination",
@@ -91,15 +83,12 @@ export const albums: Album[] = [
     slug: "3d-cover",
     title: "3D Cover Album",
     category: "Luxury Album",
-    cover: "/images/products/3d-cover/cover.jpg",
+    cover: "/images/3d-cover.jpg/cover1.jpg",
     images: [
-      "/images/products/3d-cover/img1.jpg",
-      "/images/products/3d-cover/img2.jpg",
-      "/images/products/3d-cover/img3.jpg",
-      "/images/products/3d-cover/img4.jpg",
+      "/images/3d-cover.jpg/cover1.jpg",
     ],
     description:
-      "Premium embossed 3D cover with elegant texture and luxury appearance.Sizes available 12X36 18X24",
+      "Premium embossed 3D cover with elegant texture and luxury appearance. Sizes available 12×36 and 18×24.",
     features: [
       "3D Embossed Cover",
       "Premium HD Printing",
@@ -116,15 +105,12 @@ export const albums: Album[] = [
     slug: "sparkle-cover",
     title: "Sparkle Cover Album",
     category: "Premium Wedding Album",
-    cover: "/images/products/sparkle-cover/cover.jpg",
+    cover: "/images/sparkel-cover.jpg/cover1.jpg",
     images: [
-      "/images/products/sparkle-cover/img1.jpg",
-      "/images/products/sparkle-cover/img2.jpg",
-      "/images/products/sparkle-cover/img3.jpg",
-      "/images/products/sparkle-cover/img4.jpg",
+      "/images/sparkel-cover.jpg/cover1.jpg",
     ],
     description:
-      "Sparkling luxury cover specially crafted for premium wedding memories.Sizes available 12X36 18X24",
+      "Sparkling luxury cover specially crafted for premium wedding memories. Sizes available 12×36 and 18×24.",
     features: [
       "Sparkle Finish",
       "Premium HD Printing",
@@ -141,15 +127,12 @@ export const albums: Album[] = [
     slug: "acrylic-cover",
     title: "Acrylic Cover Album",
     category: "Luxury Acrylic Album",
-    cover: "/images/products/acrylic-cover/cover.jpg",
+    cover: "/images/Acrylic-cover.jpg/cover1.jpg",
     images: [
-      "/images/products/acrylic-cover/img1.jpg",
-      "/images/products/acrylic-cover/img2.jpg",
-      "/images/products/acrylic-cover/img3.jpg",
-      "/images/products/acrylic-cover/img4.jpg",
+      "/images/Acrylic-cover.jpg/cover1.jpg",
     ],
     description:
-      "Premium acrylic sheet cover with crystal clear glossy finish and luxurious appearance.Sizes available 12X36 18X24 ",
+      "Premium acrylic sheet cover with crystal clear glossy finish and luxurious appearance. Sizes available 12×36 and 18×24.",
     features: [
       "Imported Acrylic",
       "Crystal Gloss",
@@ -166,15 +149,14 @@ export const albums: Album[] = [
     slug: "wooden-cover",
     title: "Wooden Cover Album",
     category: "Exclusive Wooden Album",
-    cover: "/images/products/wooden-cover/cover.jpg",
+    cover: "/images/wooden-cover.jpg/cover1.jpg",
     images: [
-      "/images/products/wooden-cover/img1.jpg",
-      "/images/products/wooden-cover/img2.jpg",
-      "/images/products/wooden-cover/img3.jpg",
-      "/images/products/wooden-cover/img4.jpg",
+      "/images/wooden-cover.jpg/cover1.jpg",
+      "/images/wooden-cover.jpg/cover2.jpg",
+      "/images/wooden-cover.jpg/cover3.jpg",
     ],
     description:
-      "Luxury handcrafted wooden cover album specially made for premium wedding collections.Sizes available 12X36 18X24",
+      "Luxury handcrafted wooden cover album specially made for premium wedding collections. Sizes available 12×36 and 18×24.",
     features: [
       "Wooden Finish",
       "Premium Engraving",
