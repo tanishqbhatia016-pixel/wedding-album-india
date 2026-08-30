@@ -15,49 +15,62 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://weddingalbumindia.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://weddingalbumindia.com"),
+  metadataBase: new URL(siteUrl),
 
   title: {
     default:
-      "Wedding Album India | Premium Wedding Album Printing & Designing",
+      "Wedding Album Printing & Designing in Delhi | Wedding Album India",
     template: "%s | Wedding Album India",
   },
 
   description:
-    "Wedding Album India offers premium wedding album printing and designing in Delhi. Explore luxury acrylic, wooden, 3D, sparkle and matt cover wedding albums.",
+    "Wedding Album India offers premium wedding album printing and designing in Delhi. Explore luxury acrylic, wooden, 3D, matte and premium wedding photo albums.",
 
   keywords: [
-    "wedding album India",
-    "wedding album Delhi",
+    "wedding album printing Delhi",
+    "wedding album designing Delhi",
+    "wedding photo album Delhi",
+    "premium wedding albums Delhi",
+    "luxury wedding albums Delhi",
     "wedding album printing",
     "wedding album designing",
-    "premium wedding album",
-    "luxury wedding album",
-    "wedding photo album",
-    "custom wedding album",
-    "wedding album manufacturer",
+    "custom wedding albums",
+    "premium photo albums",
+    "Wedding Album India",
   ],
 
+  authors: [
+    {
+      name: "Wedding Album India",
+      url: siteUrl,
+    },
+  ],
+
+  creator: "Wedding Album India",
+  publisher: "Wedding Album India",
+
   alternates: {
-    canonical: "https://weddingalbumindia.com",
+    canonical: siteUrl,
   },
 
   openGraph: {
-    title:
-      "Wedding Album India | Premium Wedding Album Printing & Designing",
-    description:
-      "Premium handcrafted wedding albums designed and printed for photographers, studios and families.",
-    url: "https://weddingalbumindia.com",
-    siteName: "Wedding Album India",
-    locale: "en_IN",
     type: "website",
+    locale: "en_IN",
+    url: siteUrl,
+    siteName: "Wedding Album India",
+    title:
+      "Wedding Album Printing & Designing in Delhi | Wedding Album India",
+    description:
+      "Premium handcrafted wedding albums designed and printed for photographers, studios and families in Delhi and across India.",
     images: [
       {
-        url: "/images/hero.jpg.jpg",
+        url: `${siteUrl}/images/hero.jpg.jpg`,
         width: 1200,
         height: 800,
-        alt: "Premium Wedding Album India",
+        alt: "Premium Wedding Albums by Wedding Album India",
       },
     ],
   },
@@ -65,10 +78,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Wedding Album India | Premium Wedding Album Printing & Designing",
+      "Wedding Album Printing & Designing in Delhi | Wedding Album India",
     description:
-      "Premium handcrafted wedding albums for photographers, studios and families.",
-    images: ["/images/hero.jpg.jpg"],
+      "Premium handcrafted wedding albums designed and printed in Delhi.",
+    images: [`${siteUrl}/images/hero.jpg.jpg`],
   },
 
   robots: {
@@ -77,8 +90,64 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
+
+  icons: {
+    icon: "/logo/logo.png.png",
+  },
+};
+
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${siteUrl}/#business`,
+  name: "Wedding Album India",
+  url: siteUrl,
+  image: `${siteUrl}/images/hero.jpg.jpg`,
+  telephone: "+91 9818877994",
+  email: "infoweddingalbumindia@gmail.com",
+
+  description:
+    "Premium wedding album printing and designing for photographers, studios and families in Delhi and across India.",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Delhi",
+    addressCountry: "IN",
+  },
+
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Delhi",
+    },
+    {
+      "@type": "Country",
+      name: "India",
+    },
+  ],
+
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "10:00",
+      closes: "19:00",
+    },
+  ],
+
+  priceRange: "$$",
 };
 
 export default function RootLayout({
@@ -88,11 +157,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-RLVKPSSBF1"
           strategy="afterInteractive"
@@ -102,12 +170,18 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-
             gtag('js', new Date());
 
             gtag('config', 'G-RLVKPSSBF1');
           `}
         </Script>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(businessSchema),
+          }}
+        />
       </head>
 
       <body className="min-h-full flex flex-col">

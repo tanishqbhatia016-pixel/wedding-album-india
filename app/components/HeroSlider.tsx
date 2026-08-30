@@ -61,22 +61,22 @@ export default function HeroSlider() {
           Premium Wedding Album Printing & Designing
         </p>
 
-        <h1 className="text-5xl font-black leading-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-          Wedding Album
-          <br />
-          <span className="text-yellow-400">
-            India
-          </span>
-        </h1>
+<h1 className="text-5xl font-black leading-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
+  Premium Wedding Album
+  <br />
+  <span className="text-yellow-400">
+    Printing & Designing in Delhi
+  </span>
+</h1>
 
         <div className="mt-8 h-1 w-32 rounded-full bg-yellow-400" />
 
-        <p className="mt-8 max-w-3xl text-base leading-8 text-gray-200 sm:text-lg md:text-2xl">
-          Premium handcrafted wedding albums designed for photographers,
-          studios and families. Discover luxury wedding album printing,
-          elegant designs and high-quality craftsmanship for your most
-          important memories.
-        </p>
+       <p className="mt-8 max-w-3xl text-base leading-8 text-gray-200 sm:text-lg md:text-2xl">
+  Wedding Album India creates premium handcrafted wedding albums
+  with luxury finishes, high-quality printing and elegant designs.
+  We provide wedding album printing and designing for photographers,
+  studios and families in Delhi and across India.
+</p>
 
         <div className="mt-12 flex flex-col gap-5 sm:flex-row">
 
